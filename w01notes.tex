@@ -1,0 +1,79 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage[paper=a4paper,top=3cm, bottom=2cm,left=2cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{sidenotes}
+\usepackage{hyperref}
+\usepackage{sagetex}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage[ddmmyy]{datetime}
+\setlength{\parindent}{0cm}
+\setlength\itemsep{3em}
+
+%a background shaded textbox with white text. spans the width of the textarea
+\newcommand{\cbox}[1]{\begin{tcolorbox}[left=0.5mm,right=0.5mm,top=0.5mm,bottom=0.5mm, boxsep=2pt, boxrule=0pt,colback=black]\color{white}\sffamily #1 \end{tcolorbox}}
+
+%sheet title banner, uses \cbox, 4 arguments: top left, top right, bottom left, bottom right
+\newcommand{\tuttitle}[4]{\cbox{\textbf{#1} \hfill {#2}\\{#3} \hfill {\Small #4}}\vskip 4pt}
+
+%topic banner
+\newcommand{\topic}[1]{\cbox{\textbf{#1}}\vskip 4pt}
+
+%subtopic banner
+\newcommand{\subtopic}[1]{\tcbox[nobeforeafter, left=0mm,right=10mm,top=0.5mm,bottom=0mm, boxsep=2pt, boxrule=0pt,colback=black!50]{\color{white}\sffamily #1}\\}
+
+\begin{document}
+\tuttitle{Weeks 0 \& 1 $|$ Introduction \& preliminaries}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
+
+\topic{Welcome and introduction}
+\begin{itemize}
+\item
+Schedule, teaching pattern and labs/tutorials
+\item
+Assessment
+\begin{itemize}
+\item
+Coursework (40\%)
+\item
+Examination, 3 hours (60\%)
+\end{itemize}
+\item
+The textbook: \textit{Abstract Algebra: Theory and Applications}, by Tom Judson and Rob Beezer
+\item
+Quick tour of the Moodle area
+\item
+Lecture recordings
+\end{itemize}
+\topic{Reading notes on chapters 1 \& 2}
+\textbf{Chapter 1}\\
+This chapter should be a nice read for you as it reviews material on sets, mappings and equivalence relations that should be familiar to you from your study in your first and second year. Some topics to look out for and study well are
+\begin{itemize}
+\item
+The Cartesian product of sets
+\item
+Mapping/function concepts of well-defined, injective (one-to-one),  surjective (onto), bijective, inverses, ...
+\item
+Theorem 1.15
+\item
+Theorem 1.20
+\item
+Equivalence relations and partitions
+\item
+Theorem 1.25
+\end{itemize}
+
+\textbf{Chapter 2.}\\
+You will recognise the material in this chapter from our work in the Number Theory and Cryptography unit last year. It runs through the key results that we will make use of in the study of group theory. There are lots of good exercises in section 2.3 focusing mainly on the use of the proof by induction technique and the concepts of divisibility and prime numbers.
+
+
+\topic{Problem workshop}
+There are lots of good refresher exercises in chapters 1 and 2 and you should attempt as many as you can. We will consider some of the following in lectures
+\begin{itemize}
+\item
+Chapter 1. Exercises (Sec. 1.3) questions 11, 17, 19, 25, 28
+\item
+Chapter 2. Example 2.4, Exercises (Sec. 2.3) questions 4, 6, 7
+\end{itemize}
+\end{document}

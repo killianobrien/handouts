@@ -1,0 +1,101 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage[paper=a4paper,top=3cm, bottom=2cm,left=2cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{sidenotes}
+\usepackage{hyperref}
+\usepackage{sagetex}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage[ddmmyy]{datetime}
+\setlength{\parindent}{0cm}
+\setlength\itemsep{3em}
+
+%a background shaded textbox with white text. spans the width of the textarea
+\newcommand{\cbox}[1]{\begin{tcolorbox}[left=0.5mm,right=0.5mm,top=0.5mm,bottom=0.5mm, boxsep=2pt, boxrule=0pt,colback=black]\color{white}\sffamily #1 \end{tcolorbox}}
+
+%sheet title banner, uses \cbox, 4 arguments: top left, top right, bottom left, bottom right
+\newcommand{\tuttitle}[4]{\cbox{\textbf{#1} \hfill {#2}\\{#3} \hfill {\Small #4}}\vskip 4pt}
+
+%topic banner
+\newcommand{\topic}[1]{\cbox{\textbf{#1}}\vskip 4pt}
+
+%subtopic banner
+\newcommand{\subtopic}[1]{\tcbox[nobeforeafter, left=0mm,right=10mm,top=0.3mm,bottom=0mm, boxsep=2pt, boxrule=0pt,colback=black!50]{\color{white}\sffamily #1}\\}
+
+\begin{document}
+\tuttitle{Week 01 $|$ Introductory lab session}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
+
+This lab session is all about getting up and running with using the SageMath mathematical software system via the CoCalc web service.
+
+\subtopic{Names and things:}
+A quick explanation of some the names and things you'll encounter.
+\begin{itemize}
+\item
+\emph{Sage} or \emph{SageMath} is the name for the open-source mathematical software system (see \url{sagemath.org}). SageMath itself incorporates many pre-existing open-source mathematical sofware (see \url{sagemath.org/links-components.html}). Sage uses \emph{Python}, (see \url{python.org}), as its programming language.
+\item
+Not to be confused with the business management and accountancy software, also called Sage.
+\item
+\emph{CoCalc} is the name for an cloud computing environment headed by the originator of Sage, William Stein, a number theorist from the University of Washington (see \url{wstein.org}). With CoCalc you can
+\begin{itemize}
+\item
+Use Sage in a graphical worksheet environment.
+\item
+Edit \LaTeX\ documents.
+\item
+Use Jupyter python based worksheets.
+\item
+Use a Linx terminal and access many useful mathmeatical and general computing resources such as R (statistics), the GNU compiler collection, Git for software version control, ...
+\end{itemize}
+\item
+Initially CoCalc was called SageMathCloud, but the name was changed in 2017, but the system remained the same. Any references you see in books or online to SageMathCloud can be taken to refer to CoCalc now.
+\end{itemize}
+
+\topic{Getting in to CoCalc}
+\begin{itemize}
+\item
+Visit \url{cocalc.com} and set up an account. Basic accounts are free.
+\item
+Use your standard name format MMU email address for signing up.
+\item
+There should be a Group Theory project awaiting you there.
+\end{itemize}
+
+\topic{Some quick things to try out}
+
+\begin{itemize}
+\item
+Create a SageMath worksheet.
+\begin{itemize}
+\item
+Enter in some basic caculator type commands. Evaluate your code cells using [Shift]+[Enter]
+\item
+Use a few standard mathematical functions \texttt{sin}, \texttt{cos}, \texttt{sqrt}, etc
+\item
+Draw some plots, e.g. \texttt{plot(sin(x),(x,-4,4))}
+\end{itemize}
+\end{itemize}
+\topic{Lab activities}
+\begin{enumerate}
+\item
+Open the provided LaTeX (\texttt{.tex}) file in your Group Theory project and we will together produce a nice typeset version of the induction proof for question 6 from the exercises from Chapter 2, see section (2.3) on page 29 of AATA.
+\item
+In a SageMath worksheet we will demonstrate some basic Python programming by completing question 3 from the programming exercises in section (2.4) of AATA.
+\end{enumerate}
+\topic{Further work}
+\begin{itemize}
+\item
+Work through the guided Sage explorations at the end of Chapters 1 and 2 of AATA. Some of the remarks there referring to \emph{Sage notebooks} might not be applicable to the CoCalc environment, but all the code samples (in the grey boxes) should work the same.
+\item
+Try some of the other Sage and Programming exercises from Chapters 1 and 2.
+\item
+Read some of the initial material from Gregory Bard's \emph{Sage for Undergraduates}. Chapter 5 is good for an introduction to the basics of programming in Python.
+\item
+Learning more about using \LaTeX\ in CoCalc. Vince Knight (\url{http://vknight.org/}), a mathematician from Cardiff University, has made a collection of short videos to get students started with using \LaTeX\ in SageMathCloud/CoCalc. The YouTube playlist can be found at \url{https://www.youtube.com/user/DrVinceKnight/playlists}.
+\item
+\url{https://en.wikibooks.org/wiki/LaTeX} is a good resource where you can find out how to do most things you would need to in \LaTeX.
+
+\end{itemize}
+
+\end{document}
