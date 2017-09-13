@@ -1,0 +1,63 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage[paper=a4paper,top=3cm, bottom=2cm,left=2cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{sidenotes}
+\usepackage{hyperref}
+\usepackage{sagetex}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage[ddmmyy]{datetime}
+\setlength{\parindent}{0cm}
+\setlength\itemsep{3em}
+
+%a background shaded textbox with white text. spans the width of the textarea
+\newcommand{\cbox}[1]{\begin{tcolorbox}[left=0.5mm,right=0.5mm,top=0.5mm,bottom=0.5mm, boxsep=2pt, boxrule=0pt,colback=black]\color{white}\sffamily #1 \end{tcolorbox}}
+
+%sheet title banner, uses \cbox, 4 arguments: top left, top right, bottom left, bottom right
+\newcommand{\tuttitle}[4]{\cbox{\textbf{#1} \hfill {#2}\\{#3} \hfill {\Small #4}}\vskip 4pt}
+
+%topic banner
+\newcommand{\topic}[1]{\cbox{\textbf{#1}}\vskip 4pt}
+
+%subtopic banner
+\newcommand{\subtopic}[1]{\tcbox[nobeforeafter, left=0mm,right=10mm,top=0.5mm,bottom=0mm, boxsep=2pt, boxrule=0pt,colback=black!50]{\color{white}\sffamily #1}\\}
+
+\begin{document}
+\tuttitle{Week 02 $|$ Basic definitions \& examples}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
+\vskip 16pt
+
+\topic{Reading notes on chapter 3}
+
+\textbf{The definition of a group and examples :}
+It might be better to quickly look at the definition of a group at the beginning of section 3.2, and then work through the two motivating examples at the beginning of the chapter and the numerous examples in the rest of section 3.2. The point to appreciate here is how the same type of \emph{set with nice operation structure} can occur in different mathematical settings.
+\vskip 8pt
+\textbf{Basic properties of groups:} Here we see the development of the first results in abstract group theory, Proposition 3.17 to Theorem 3.23. These are basic facts that are shared by \emph{all} groups. The arguments here are general and abstract, working only from the four group axioms in the definition and without reference to any of the specific examples of groups that we have seen so far.
+\vskip 8pt
+One technical result that we can add to those in the book is the principle of general associativity.
+\vskip 4pt
+\begin{tcolorbox}[colback=black!15]
+\textbf{Theorem:} (General Associativity)\\
+If the binary operation $\circ$ on a set $X$ is associative then it is generally associative, i.e. for any integer $n \geq 1$ any product of $n$ elements from $X$
+$$ x_1 \circ x_2 \circ \dots \circ x_{n-1} \circ x_n,$$
+it corresponds to a uniquely defined element of $X$ no matter how the long product is bracketed in order to evaluate it under the binary operation $\circ$.
+\end{tcolorbox}
+
+\vskip 8pt
+\textbf{Subgroups:}
+In section 3.3 subgroups are defined and many examples shown. The ideas here should remind you very much of the concept of a subspace of a vector space, indeed all vector spaces are examples of groups with respect to the operation of vector addition (check the axioms) and all vector subspaces also qualify as subgroups of enclosing vector space (group). But you should appreciate that vector space has lots of additional structure (the multiplication operation and associated properties).
+
+\vskip 8pt
+
+
+\topic{Problem workshop}
+There is a great collection of exercise questions in section 3.4, 54 in all! Students are encouraged to attempt as many as these as possible.
+
+\begin{itemize}
+\item
+Many of the questions test your handling of the group axioms, either confirming or denying that a particular set and operation form a group.
+\item
+Other exercises are more general, they ask you to establish general facts about groups. These should be regarded as significant results in their own right which could be added the list of basic consequences of the group axioms that were developed in chapter 3. Some of the exercises that fall under this heading are questions 25, 27, 32, 45, 46, 47, 48, 53, 54.
+\end{itemize}
+\end{document}
