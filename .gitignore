@@ -222,3 +222,7 @@ TSWLatexianTemp*
 
 #CoCalc terminal files
 *.term
+
+#other CoCalc generated auxiliary files
+*.tex.lock
+*.sage.py
