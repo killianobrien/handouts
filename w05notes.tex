@@ -1,45 +1,13 @@
 \documentclass[oneside,10pt]{amsart}
-\usepackage[paper=a4paper,top=3cm, bottom=3cm,left=2cm,right=3cm]{geometry}
-\usepackage{setspace}
-\usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{sidenotes}
-\usepackage{hyperref}
-%\usepackage{sagetex}
-\usepackage{mathtools}
-\usepackage{calc}
-\setlength{\parindent}{0cm}
+\usepackage{jfkobgrp}
 
-%a background shaded textbox with white text. spans the width of the textarea
-\newcommand{\cbox}[1]{\colorbox{black}{\begin{minipage}{\linewidth}\color{white}\sffamily #1 \end{minipage}}}
-
-
-% gray background box
-\newcommand{\gbox}[1]{\colorbox{gray!30}{\begin{minipage}{\linewidth}\color{black} #1 \end{minipage}}}
-
-%sheet title banner, uses \cbox
-\newcommand{\tuttitle}[4]{\cbox{\textbf{#1} \hfill {#2}\\{#3} \hfill {\Small #4}}\vskip 4pt}
-
-%topic banner
-\newcommand{\topic}[1]{\cbox{\textbf{#1}}\vskip 4pt}
-
-
-
-\newcounter{pass}
-
-
-
-
-
-\setlength\itemsep{3em}
 \begin{document}
-\tuttitle{Weeks 03, 04, 05 $|$ Initial group theory \& examples}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
-\vskip 16pt
+\tuttitle{Weeks 04, 05 $|$ Permutation groups}{Dr Killian O'Brien \& Dr Jan Foniok}{6GZ3012 Group Theory}{\today}
 
 \topic{Reading notes on Chapter 5: Permutation groups and dihedral groups}
 This chapter introduces two important families of groups: permutation groups and dihedral groups.
 
-\textbf{Permutation groups}\\
+\captn{Permutation groups}
 Permutations are a basic type of combinatorical object.
 \begin{itemize}
 \item
@@ -47,13 +15,13 @@ A \emph{permutation} of $n$ symbols is a bijective function from the domain $\{ 
 \item
 The chapter introduces permutations with the help of some examples and outlines the key results and notations used. Make sure you appreciate the difference between the two-line and cycle notations.
 \item
-Appreciate the result theorem 5.9 which settles on a near-canonical form for representing permutations -- as a product of disjoint cycles.
+Appreciate the result of Theorem 5.9, which settles on a near-canonical form for representing permutations -- as a product of disjoint cycles.
 \end{itemize}
 
 Groups of permutations provide a rich source of examples of group structures. In fact there is a strong sense in which for every finite group there is a group of permutations which exhibits exactly the same group structure (see Cayley's theorem coming later in Isomorphisms topic). Also permutation groups are used as the concrete way of representing lots of groups in Sage.
 
-\textbf{Dihedral groups}\\
-The dihedral groups are the symmetry groups of various regular $n$-sided polygons, i.e. the regular triangle, square, pentagon, hexagon, etc.
+\captn{Dihedral groups}
+The dihedral groups are the symmetry groups of various regular $n$-sided polygons, that is, the regular triangle, square, pentagon, hexagon, etc.
 
 They can be thought of in (at least) two ways
 \begin{itemize}
@@ -64,20 +32,28 @@ As groups of permutations using a suitable labelling of the polygon, such as an 
 \end{itemize}
 
 
-\vskip 4pt
-
 \topic{Chapter 5 exercises}
-Again we find a good collection of problems near the end of the chapter on page 91. They begin with computational exercises working with the various permutation notations before more general group-theoretic problems later in the list.
-
-\vskip 4pt
+Again we find a good collection of problems near the end of the chapter on page~92. They begin with computational exercises working with the various permutation notations before more general group-theoretic problems later in the list.
 
 \topic{Sage exercises}
-In section 5.4 there is a detailed step-by-step tutorial investigating some permutations, permutation groups and the motion group (rotational symmetry group) of a cube, again represented as a group of permutations.
+In Section 5.4 there is a detailed step-by-step tutorial investigating some permutations, permutation groups and the motion group (rotational symmetry group) of a cube, again represented as a group of permutations.
 
 Section 5.5 contains some challenging Sage exercises investigating other examples of these groups.
 
-When working with permutation groups in Sage we need to remember the import point about \textbf{evaluation order}.\\
-\gbox{If \texttt{sigma} and \texttt{tau} are two permutations in Sage then the product \texttt{sigma * tau} denotes the composition of permutations where \texttt{sigma} is applied first and then \texttt{tau}. Note that this is opposite to the usual convention we operate with when presenting mathematics -- where a product $\sigma \tau$ denotes the composition of permutations $\sigma \circ \tau$, i.e. $\tau$ being applied first and then $\sigma$.}
+When working with permutation groups in Sage we need to remember the import point about \textbf{evaluation order}:
+
+\smallskip
+
+\gbox{If \texttt{sigma} and \texttt{tau} are two permutations in Sage then the product \texttt{sigma *
+tau} denotes the composition of permutations where \texttt{sigma} is applied first and then \texttt{tau}.
+Note that this is opposite to the usual convention we operate with when presenting mathematics~-- where a
+product~$\sigma \tau$ denotes the composition of permutations~$\sigma \circ \tau$, i.e., $\tau$~being applied first and then~$\sigma$.}
+
+\topic{Submission problems}
+
+From Exercises in Section 5.3, questions 27 and~28.
+Furthermore, from the Sage Exercises in Section~5.5, question~2 parts~(a)--(d).
+Submit these by Monday 30th October.
 
 
 \end{document}
