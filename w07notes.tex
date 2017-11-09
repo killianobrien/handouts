@@ -1,0 +1,51 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage{jfkobgrp}
+
+\begin{document}
+\tuttitle{Week 07, 08 $|$ Isomorphisms and direct products}{Dr Killian O'Brien \& Dr Jan Foniok}{6GZ3012 Group Theory}{\today}
+
+\topic{Reading notes on Chapter 9: Isomorphisms}
+Up to now we have sometimes made the observation that two groups, while defined as different objects, seem to share a lot of \emph{group theoretic} properties and should maybe be regarded as essentially the same. In this chapter this idea is presented in a rigorously defined way with the concept of an \emph{isomorphism}.
+
+In the second part of the chapter we see the concepts of external and internal direct products introduced. These provide ways to talk about larger compound groups being `made from' smaller component groups.
+\vskip 4pt
+
+\textbf{The definition of isomorphic:}
+The groups $G$ and $£H$ are isomorphic when there exists a bijection $\phi:G \to H$ satisfying
+$$\forall x,y \in G \quad \phi(xy) = \phi(x)\phi(y).$$
+
+The condition $\phi(xy)=\phi(x)\phi(y)$ is sometimes called the \emph{homomorphism property}, and indeed a homomorphism between groups is defined as any map that satisfies that property (i.e. it doesn't have to be bijective). We will be investigating homomorphisms in general in chapter 11. Some authors take the approach of investigating homomorphisms first and then meeting isomorphisms as a special case of homomorphisms. But the approach taken by AATA is also a natural one and one I like.
+
+The homomorphism property is an example of the general concept of a `structure-preserving map', i.e. a function between two instances of a certain kind of mathematical object (groups in our case here) that respects the mathematical structure that there is in both the objects. You should try to compare it with other types of `structure-preserving' maps that you have encountered in your studies so far. Two that come to my mind are
+
+\begin{itemize}
+\item
+continuous maps from $\mathbb{R}$ to $\mathbb{R}$ -- these can be regarded as maps that preserve the notion of \emph{closeness}.
+\item
+linear transformations from one vector space to another -- these maps map linear combinations of vectors in the domain to the same linear combinations of the images of the individual vectors in the co-domain.
+\end{itemize}
+The mathematical possibilities of such `structure-preserving maps' is studied for its own sake in the area of mathematics called \emph{Category Theory}.
+
+
+\textbf{Direct products:}
+The exact differences between the concepts of external and internal direct products can be tricky to appreciate at first.
+
+The external direct product is best viewed as a way to take two (or more) given groups and use them to construct a larger group as the product of the component groups.
+
+The internal direct product is best viewed as a way of recognising when a given `large' group can be broken down into a product of two (or more) of its own subgroups.
+
+\topic{Chapter 9 exercises}
+Again, Judson does not leave us with any excuses for idleness. There are a total of 55 numbered exercises towards the end of the chapter. Again these range from computational example based problems which help us to solidify our understanding of the concepts from the chapter, to `proof-type' problems that require us to be creative in using the concepts and results already established to get to new knowledge about groups.
+
+Try as many of these exercises that you can and do bring queries about them to the sessions. Do not get discouraged if you cannot make progress with some of the questions at first as some of them are quite challenging.
+
+Question 23 for instance seems quite reasonable at first, surely we can simply cancel the $K$ from the products on both sides, but can we?
+
+\topic{Submission problems}
+For submission by Monday 20th November please prepare solutions to the folling questions from Section 9.3 Exercises on page 162.
+
+Questions: 9, 12, 47, 55.
+
+For 12 think about the orders of elements in $D_{12}$ and $S_4$. Question 55 is a bit longer, but provides a guide to the various intermediate stages in building a proof that there are only two isomorphism classes of groups of order $2p$, where $p$ is an odd prime, i.e. a prime greater than 2. One class is the class of cyclic groups of order $2p$ and the other is the class of groups isomorphic to $D_{p}$, the dihedral group of symmetries of the regular $p$-sided polygon. 
+
+\end{document}
