@@ -1,0 +1,60 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage[paper=a4paper,top=3cm, bottom=3cm,left=2cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{sidenotes}
+\usepackage{hyperref}
+\usepackage{sagetex}
+\usepackage{mathtools}
+\usepackage{calc}
+\setlength{\parindent}{0cm}
+
+%a background shaded textbox with white text. spans the width of the textarea
+\newcommand{\cbox}[1]{\colorbox{black}{\begin{minipage}{\linewidth}\color{white}\sffamily #1 \end{minipage}}}
+
+% gray background box
+\newcommand{\gbox}[1]{\colorbox{gray!30}{\begin{minipage}{\linewidth}\color{black} #1 \end{minipage}}}
+
+%sheet title banner, uses \cbox
+\newcommand{\tuttitle}[4]{\cbox{\textbf{#1} \hfill {#2}\\{#3} \hfill {\Small #4}}\vskip 4pt}
+
+%topic banner
+\newcommand{\topic}[1]{\cbox{\textbf{#1}}\vskip 4pt}
+
+\newcounter{pass}
+
+
+\setlength\itemsep{3em}
+\begin{document}
+\tuttitle{Weeks 07, 08, 09 $|$ Homomorphisms, isomorphisms and factor groups}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
+\vskip 16pt
+
+\topic{Reading notes on Chapter 10: Normal Subgroups and Factor Groups}
+In chapter 6 we saw how the coset construction builds a partition of the set $G$ of group elements, starting from a subgroup $H$ of $G$ as one of the cells of the partition. This chapter investigates when this partition of $G$, i.e. a set of subsets of $G$, can actually be given a group structure itself by an operation naturally induced on the partition subsets by the operation of $G$.
+
+The condition for when this happens is when the subgroup $H$ that started the partition is a \emph{normal} subgroup of $G$, i.e. when the left and right cosets of $H$ by any element $g \in G$ are actually the same, i.e.
+$$ \forall \, g \in G \quad gH = Hg.$$
+The resulting group is called the \emph{factor group} of $G$ by $H$ (also commonly called the \emph{quotient group} of $G$ by $H$) and can be viewed as a kind of simplification of the group $G$ induced by regarding all the elements of $H$ to be equivalent to the identify element of $G$ and then looking at the ramifications of this.
+\vskip 6pt
+
+\textbf{Contents of Chapter 10:}
+Chapter 10 introduces the key definitions along with several examples and proves the establishes the group structure on the set of cosets of $H$ in $G$. The second section 10.2 then looks at an important result about the alternating groups $A_n$, that these contain no proper normal subgroups whenever $n \geq 5$.
+\vskip 12pt
+
+\topic{Reading notes on Chapter 11: Homomorphisms}
+Previously when we studies isomorphisms we referred to the condition
+$$\phi(ab) = \phi(a)\phi(b)$$
+as the \emph{homomorphism condition} for the mapping $\phi$. Isomorphisms were defined as bijective mappings between groups that satisfy this homorphism property.
+
+In this chapter we investigate \emph{homomorphisms} which are mappings between groups which satisfy the homoromorphism property, i.e. the bijective condition is no longer required so a homomorphism $\phi:G \to H$ need not be injective or surjective.
+\vskip 6pt
+
+\textbf{Contents of chapter 11:}
+The chapter introduces the key definitions and in Proposition 11.4 looks at some of the immediate consequences of the homomorphism condition. There are several examples described and then in section 11.2 there are three Isomorphism Theorems presented. These are theorems that describe important inter-relationships between the concepts of isomorphism, homomorphisms and normal subgroups.
+
+In section 11.4 there is a series of additional exercises exploting the concept of autmorphisms, i.e. isomorphisms from a group $G$ to itself.
+
+
+\end{document}
+%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'w09notes.tex'"}
