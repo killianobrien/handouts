@@ -226,3 +226,6 @@ TSWLatexianTemp*
 #other CoCalc generated auxiliary files
 *.tex.lock
 *.sage.py
+
+# MacOS Finder rubbish
+.DS_Store

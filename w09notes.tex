@@ -1,0 +1,32 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage{jfkobgrp}
+
+\begin{document}
+\tuttitle{Weeks 09, 10 $|$ Normal Subgroups and Factor Groups}{Dr Killian O'Brien \& Dr Jan Foniok}{6G6Z3012 Group Theory}{\today}
+
+\topic{Reading notes on Chapter 10: Normal Subgroups and Factor Groups}
+In chapter 6 we saw how the coset construction builds a partition of the set~$G$ of group elements,
+starting from a subgroup~$H$ of~$G$ as one of the cells of the partition. This chapter investigates when
+this partition of~$G$, that is, a set of subsets of~$G$, can actually be given a group structure itself by an operation naturally induced on the partition subsets by the operation of~$G$.
+
+The condition for when this happens is when the subgroup $H$ that started the partition is a
+\emph{normal} subgroup of~$G$, that is, when the left and right cosets of~$H$ by any element $g \in G$ are actually the same, i.e.
+$$ \forall \, g \in G \quad gH = Hg.$$
+The resulting group is called the \emph{factor group} of $G$ by $H$ (also commonly called the
+\emph{quotient group} of~$G$ by~$H$) and can be viewed as a kind of simplification of the group~$G$
+induced by regarding all the elements of~$H$ to be equivalent to the identity element of~$G$, and then looking at the ramifications of this.
+\vskip 6pt
+
+\textbf{Contents of Chapter 10:}
+Chapter 10 introduces the key definitions along with several examples and establishes the group structure on the set of cosets of~$H$ in~$G$. The second section 10.2 then looks at an important result about the alternating groups~$A_n$, that these contain no proper normal subgroups whenever $n \geq 5$.
+%\vskip 12pt
+
+\topic{Submission exercises}
+
+For submission by Monday 4th December please prepare solutions to the following questions
+from Section~10.3 Exercises on page 177.
+
+Questions: 5, 6, 10.
+
+\end{document}
+%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'w09notes.tex'"}
