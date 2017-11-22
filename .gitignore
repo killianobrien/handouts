@@ -226,6 +226,7 @@ TSWLatexianTemp*
 #other CoCalc generated auxiliary files
 *.tex.lock
 *.sage.py
+*.sage-chat
 
 # MacOS Finder rubbish
 .DS_Store
