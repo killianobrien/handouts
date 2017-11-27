@@ -96,8 +96,10 @@ Describe the group, $G$, of rotational symmetries of the regular tetrahedron.
 By using an appropriate labelling of parts of the tetrahedron prove that $G$ is isomorphic to $A_4$, the alternating group on four symbols.
 \item
 Construct the group of symmetries of the tetrahedron in Sage (also the alternating group on 4 symbols, \(A_4\)) with the command \texttt{A=AlternatingGroup(4)}.  Using tools such as orders of elements, and generators of subgroups, see if you can find \emph{all of} the subgroups of \(A_4\) (each one exactly once).  Do this without using the \texttt{.subgroups()} method to justify the correctness of your answer (though it might be a convenient way to check your work).%
-\par
-Provide a nice summary as your answer \textemdash{} not just piles of output.  So use Sage as a tool, as needed, but basically your answer will be a concise paragraph and/or table.
+
+For each of the subgroups, determine whether it is normal in~$A_4$ or not, and justify your answer.
+
+Provide a nice summary as your answer~-- not just piles of output.  So use Sage as a tool, as needed, but basically your answer will be a concise paragraph and/or table.
 \end{enumerate}
 
 \topic{3. Classifying groups of order $2p$ (AATA Sec. 9.3 Q. 55)}
@@ -118,11 +120,13 @@ Write an account of the classification of the isomorphism classes of all groups 
 Normal subgroups and the factor group construction provide a way to get a simplified view of a group $G$ by partitioning its elements into subsets and looking at the operation induced on the partition by the operation from $G$. In this question you will prove that normal subgroups are the only such way to obtain simplified views of $G$.
 
 A \emph{congruence} on a group $G$ is an equivalence relation $\sim$ on $G$ that is compatible with the group operation of $G$, that is, if $g_1 \sim g_2$ and $h_1 \sim h_2$ then $g_1h_1 \sim g_2h_2$.
+
+Let $\sim$ be a congruence on~$G$.
 \begin{enumerate}[label=(\alph*)]
 \item
 Prove that if $g_1 \sim g_2$ then $g_1^{-1} \sim g_2^{-1}$.
 \item
-Prove that the partition of $G$ induced by the congruence classes of $\sim$ is the partition of $G$ into the cosets of a certain normal subgroup of $G$.
+Prove that the partition of $G$ induced by the equivalence classes of $\sim$ is the partition of $G$ into the cosets of a certain normal subgroup of $G$.
 \end{enumerate}
 
 
