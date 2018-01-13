@@ -1,0 +1,30 @@
+\documentclass[oneside,10pt]{amsart}
+\usepackage{jfkobgrp}
+
+\begin{document}
+\tuttitle{Weeks 13 \& 14 $|$ Finite abelian groups}{Dr Killian O'Brien}{6GZ3012 Group Theory}{\today}
+\vskip 16pt
+
+\topic{Reading notes on Chapter 13: The classification of finite abelian groups}
+In this chapter the Fundamental Theorem of Finite Abelian Groups (FTFAG, Theorem 13.4) is proved. This theorem describes all the possibilities for the isomorphism classes of finite abelian groups. It says that a finite abelian group will be isomorphic to some direct product of cyclic groups.
+\vskip 0.3cm
+
+\textbf{Theorem 13.4}: Every finite abelian group $G$ is isomorphic to a direct product of cyclic groups of the form
+$$G \cong \prod_{i=1}^n \mathbb{Z}_{p_i^{\alpha_i}}
+= \mathbb{Z}_{p_1^{\alpha_1}} \times \mathbb{Z}_{p_2^{\alpha_2}} \times \dots \times \mathbb{Z}_{p_n^{\alpha_n}},$$
+where the $p_i$ are primes, not necessarily distinct.
+\vskip 0.3cm
+
+This is a nice example of a result where we can readily understand the statement of it now -- it depends only on the definitions of isomorphism and direct product that we have seen already. However the proof needs to be built up carefully and technical aspects are separated carefully into various lemmas (13.6 -- 13.9).
+\vskip 0.3cm
+
+The main idea behind the proof is to inductively separate off a cyclic direct product group term from $G$, i.e. to establish a method that shows that $G$ can be expressed as $G \cong \langle g \rangle \times H$. This shows $G$ as being isomorphic to a direct product of a non-trivial cyclic group $\langle g \rangle$ and a subgroup $H$ of $G$. Note that the order of $H$ will be smaller than that of $G$. So we will be able to build an induction argument to proof the general result of the FTFAG.
+\vskip 0.3cm
+
+You will also note that in the lemmas we make good use of the theory we have developed so far, in particular isomorphisms, cyclic groups and factor groups (quotient groups).
+
+
+
+
+\end{document}
+%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'w13notes.tex'"}
